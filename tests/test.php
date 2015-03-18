@@ -188,15 +188,4 @@ class CalculatorTest extends PHPUnit_Framework_TestCase {
 		// 2) in the event that you get 2 numbers what happens
 	}
 
-	/*
-	 * $value = (new calculator)->evaluate(
-				(new equation)
-				->number(12)
-				->add()
-				->number(13)
-				->subtract()
-				->number(23)
-		);
-		print $value;
-	 */
 }
