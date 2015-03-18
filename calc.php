@@ -78,7 +78,12 @@ class number {
  * TODO: extend so it has brackets, percentage, scienctific functions
  */
 class equation {
-	$this->equation = [];
+	protected equation = [];
+
+	public function __construct(){
+		// set this so it resets the array each time
+		$this->equation = [];
+	}
 
 	public function number($number){
 		$this->equation[] = new number($number);
