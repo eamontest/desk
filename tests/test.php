@@ -161,7 +161,7 @@ class CalculatorTest extends PHPUnit_Framework_TestCase {
 				->number(1)
 				->add()
 				->number(1)
-				->multipy()
+				->multiply()
 				->number(3)
 				->add()
 				->number(1)
