@@ -30,7 +30,7 @@ abstract class operator {
  */
 class multiply extends operator {
 	public function __construct(){
-		$this->precedence = 0;
+		$this->precedence = 1;
 		$this->operand = chr(42);
 	}
 }
