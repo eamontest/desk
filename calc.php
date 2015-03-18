@@ -55,3 +55,22 @@ class subtract extends operator {
 		$this->operand = chr(45);
 	}
 }
+
+/*
+ * We're going to need numbers
+ */
+class number {
+	public function __construct($number){
+		// only allow positive numbers or floats
+		if((!is_int($number) or !is_float($number)) && $number < 0){
+			throw new InvalidNumberException($number  . ' is not a valid number, please enter a valid number');
+		}
+		$this->number = $number;
+	}
+
+	public function getNumber(){
+		return $this->number;
+	}
+}
+
+// TODO: think about how this method can be extended to build a full calculator
