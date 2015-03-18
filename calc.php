@@ -71,8 +71,8 @@ class subtract extends operator {
 class number {
 	public function __construct($number){
 		// only allow positive numbers or floats
-		if((!is_int($number) or !is_float($number)) && $number < 0){
-			throw new InvalidNumberException($number  . ' is not a valid number, please enter a valid number');
+		if(!(is_int($number) or is_float($number))){
+			throw new InvalidNumberException('not a valid number, please enter a valid number');
 		}
 		$this->number = $number;
 	}
@@ -178,7 +178,7 @@ class calculator {
 		}
 
 		// lets evaluate each of the remaining parts
-		$total = 0;
+		$total = '';
 		foreach($fx as $part){
 			$total .= $part;
 		}
