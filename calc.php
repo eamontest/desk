@@ -23,6 +23,10 @@ abstract class operator {
 	public function getPrecedence(){
 		return $this->precedence;
 	}
+
+	public function __toString(){
+		return $this->getOperand();
+	}
 }
 
 /*
@@ -71,6 +75,10 @@ class number {
 	public function getNumber(){
 		return $this->number;
 	}
+
+	public function __toString(){
+		return $this->number;
+	}
 }
 
 /*
@@ -111,28 +119,41 @@ class equation {
 	}
 }
 
+
 /*
  * Next we are going to need a caller that will bring this all together
  * pattern in mind
  * (new calculator)->evaluate(
-		(new equation)
-			->number(12)
-			->add()
-			->number(13)
-			->subtract()
-			->number(23);
-);
+ (new equation)
+ ->number(12)
+ ->add()
+ ->number(13)
+ ->subtract()
+ ->number(23);
+ );
 
-or
+ or
 
-(new calculator)->evaluate()
-			->number(12)
-			->add()
-			->number(13)
-			->subtract()
-			->number(23);
-);
+ (new calculator)->evaluate()
+ ->number(12)
+ ->add()
+ ->number(13)
+ ->subtract()
+ ->number(23);
+ );
 
 
  */
+
+/*
+ * Now we need an object to calculate, could posibily extend to manage multiple equations
+ * Think it's think for me to get phpunit involve here now i've decided on best method from the options
+ */
+class calculator {
+
+	public function evalute(equation $equation){
+
+	}
+}
+
 
