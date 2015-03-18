@@ -181,6 +181,11 @@ class CalculatorTest extends PHPUnit_Framework_TestCase {
 		);
 		$expected = 2.3333333333;
 		$this->assertEquals($actual, $expected);
+
+
+		// lets test this further, there are 2 issues not tested here
+		// 1) in the event that you get 2 operators what happens
+		// 2) in the event that you get 2 numbers what happens
 	}
 
 	/*
