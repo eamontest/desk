@@ -168,6 +168,19 @@ class CalculatorTest extends PHPUnit_Framework_TestCase {
 		);
 		$expected = 5;
 		$this->assertEquals($actual, $expected);
+
+		$actual = (new calculator)->evaluate(
+				(new equation)
+				->number(1)
+				->add()
+				->number(1)
+				->divide()
+				->number(3)
+				->add()
+				->number(1)
+		);
+		$expected = 2.3333333333;
+		$this->assertEquals($actual, $expected);
 	}
 
 	/*
