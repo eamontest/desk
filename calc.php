@@ -73,4 +73,35 @@ class number {
 	}
 }
 
-// TODO: think about how this method can be extended to build a full calculator
+/*
+ * So to calculate we need an expression
+ * TODO: extend so it has brackets, percentage, scienctific functions
+ */
+class equation {
+	$this->equation = [];
+
+	public function number($number){
+		$this->equation[] = new number($number);
+		return $this;
+	}
+
+	public function add(){
+		$this->equation[] = new add();
+		return $this;
+	}
+
+	public function subtract(){
+		$this->equation[] = new subtract();
+		return $this;
+	}
+
+	public function multiply(){
+		$this->equation[] = new multiply();
+		return $this;
+	}
+
+	public function divide(){
+		$this->equation[] = new divide();
+		return $this;
+	}
+}
