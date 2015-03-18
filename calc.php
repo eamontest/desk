@@ -113,4 +113,26 @@ class equation {
 
 /*
  * Next we are going to need a caller that will bring this all together
+ * pattern in mind
+ * (new calculator)->evalute(
+		(new equation)
+			->number(12)
+			->add()
+			->number(13)
+			->subtract()
+			->number(23);
+);
+
+or
+
+(new calculator)->evalute()
+			->number(12)
+			->add()
+			->number(13)
+			->subtract()
+			->number(23);
+);
+
+
  */
+
