@@ -110,3 +110,7 @@ class equation {
 		return $this;
 	}
 }
+
+/*
+ * Next we are going to need a caller that will bring this all together
+ */
