@@ -24,3 +24,34 @@ abstract class operator {
 		return $this->precedence;
 	}
 }
+
+/*
+ * Lets define the different types of operators
+ */
+class multiply extends operator {
+	public function __construct(){
+		$this->precedence = 0;
+		$this->operand = chr(42);
+	}
+}
+
+class divide extends operator {
+	public function __construct(){
+		$this->precedence = 1;
+		$this->operand = chr(47);
+	}
+}
+
+class add extends operator {
+	public function __construct(){
+		$this->precedence = 2;
+		$this->operand = chr(43);
+	}
+}
+
+class subtract extends operator {
+	public function __construct(){
+		$this->precedence = 2;
+		$this->operand = chr(45);
+	}
+}
