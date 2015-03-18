@@ -114,7 +114,7 @@ class equation {
 /*
  * Next we are going to need a caller that will bring this all together
  * pattern in mind
- * (new calculator)->evalute(
+ * (new calculator)->evaluate(
 		(new equation)
 			->number(12)
 			->add()
@@ -125,7 +125,7 @@ class equation {
 
 or
 
-(new calculator)->evalute()
+(new calculator)->evaluate()
 			->number(12)
 			->add()
 			->number(13)
