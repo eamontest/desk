@@ -6,7 +6,6 @@
  */
 
 class InvalidNumberException extends Exception {};
-class DivisionByZeroException extends Exception {};
 
 /*
  * Define what objects the calculator will have
